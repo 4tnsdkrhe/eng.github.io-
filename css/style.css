@@ -1,0 +1,392 @@
+body{
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F6F5F4;
+    color: black;
+}
+
+/* ---------HEADER---------- */
+
+.btn, .nav, .nav-link, .link{
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #757575;
+    text-decoration: none;
+}
+
+.dropdown-item{
+    font-weight: 600;
+}
+
+.nav-link:first-child{
+    margin-left: 30px;
+}
+
+.btn:hover, .btn:focus, .link:hover, .nav-link:hover, .nav-link:focus{
+    color: black;
+}
+
+.header{
+    height: 90px;
+}
+
+.logo{
+    font-size: 20.86px;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.stick{
+    color: #757575;
+    margin-left: 30px;
+    opacity: .3;
+}
+
+.line{
+    border-top: 1px solid #757575;
+    opacity: .3;
+}
+
+/* -----------LEVELS----------- */
+.foralllevels{
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 50px;
+    padding: 0 10px;
+}
+
+.level_block{
+    text-decoration: none;
+    color: black;
+}
+
+
+.level{
+    margin: 0;
+    font-weight: 600;
+}
+
+.Easy{
+    color: #198754;
+}
+.Easy:hover, .Easy:focus, .Hard:hover, .Hard:focus{
+    color:white;
+}
+
+.Medium{
+    color: #b38d1c;
+}
+
+.Hard{
+    color: #dc3545;
+}
+
+.Slides{
+    margin-top: 100px;
+}
+
+.word__content{
+    width: 926px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 14px;
+}
+
+.img_word{
+    width: 337px;
+}
+
+
+/* ------------CARDS---------------- */
+.card-text{
+    font-weight: 300;
+    height: 90px;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.btn-card:hover{
+    color: white;
+}
+
+
+/* ------------Transcript, quiz-------*/
+.accordion{
+    width: 990px;
+    margin: 0 auto;
+}
+
+.accordion-body{
+    font-weight: 300;
+}
+
+.accordion-button{
+    font-weight: 600;
+}
+
+.dialogue{
+    font-weight: lighter;
+}
+
+.quiz-ul{
+    list-style: none;
+    padding: 0;
+}
+
+.quiz-box{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 700px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.quiz-header{
+    padding: 64px;
+}
+
+.quiz-btn{
+    background-color: #5ec6eb;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 15px;
+    transition: all 0.5s ease;
+}
+.quiz-btn:hover{
+    background-color: #438faa;
+}
+.quiz-btn:focus{
+    outline: none;
+    background-color: #5ec6eb;
+}
+
+.quiz-li{
+    margin-bottom: 10px;
+}
+
+.rihide {
+    display: none;
+  }
+  
+  #richeckfalse {
+    cursor: pointer;
+  }
+  
+  #richecktrue {
+    cursor: pointer;
+  }
+  
+  .ricorrect {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
+  .riincorrect {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  
+  .riitem {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #111;
+    background-color: #efefef;
+    border-color: #dfdfdf;
+  }
+
+  /* WRITIIIIIIIIIIIIIIIIING */
+.writing-tip{
+    background-color: white;
+}
+
+.title-writing{
+    font-weight: 600;
+}
+
+  /* FOOOOOOOOOOOOOOOOOOOOTeR */
+.footer{
+    margin-top: 130px;
+    height: 400px;
+    background-color: #dfdfdf;
+    color: #333333;
+}
+
+.logo-footer{
+    font-size: 40px;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.text-footer{
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.Copyright{
+    padding: 50px;
+}
+
+/* YERKE */
+
+.mini {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.14em;
+    color: #2B788B;
+    margin-bottom: 24px;
+}
+.slova1 {
+    font-family: 'Dela Gothic One';
+    color: black;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 120%;
+
+}
+.slova2 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: #757575;
+}
+.about_ {
+    color: #2B788B;
+    margin-top: 32px;
+    background: #C3DCE3;
+    border-radius: 100px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    width: 165px;
+    height: 44px;
+    margin-bottom: 49px;
+}
+.statistics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+}
+.sixty{
+    margin-right: 49px;
+}
+.palka {
+    color:  #E0E0E0;
+    font-size: 35px;
+    font-weight: 100;
+}
+.twoPlus {
+    margin-left: 49px;
+}
+.topim {
+    display: flex;
+    justify-content: center;
+}
+.firstUnder {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    color: #585858;
+}
+.secondUnder {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    color: #585858;
+}
+.kartinki {
+    position: relative;
+    top: 0;
+    left: 0;
+  
+}
+.boy {
+    position: absolute;
+    padding-top: 109px;
+    padding-left: 51.77px;
+    padding-bottom: 93.72px;
+    z-index: 2;
+}
+.yula {
+    margin-top: 250px;
+    position: absolute;
+    z-index: 1;
+}
+.plant {
+    margin-left: 350px;
+    margin-top: 80px;
+    position: absolute;
+    z-index: 3;
+}
+.second {
+    margin-top: 250px;
+}
+.slova3 {
+    font-family: 'Dela Gothic One';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+}
+.slova4 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    color: #757575;
+    margin-top: 30px;
+}
+.games {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+.blue {
+    margin-left: 21px;
+}
+.speredi {
+    z-index: 2;
+    position: absolute;
+}
+.szadi {
+    z-index: 1;
+}
+/* font-family: 'Dela Gothic One', cursive;
+font-family: 'Montserrat', sans-serif; */
