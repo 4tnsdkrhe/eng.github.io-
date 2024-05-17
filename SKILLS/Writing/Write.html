@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+        <title>Document</title>
+        <!-- JAVASCRIPT -->
+        <script href="/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <!-- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/bootstrap-grid.rtl.css">
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/css/style.css">
+    
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header class="header p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-flex align-items-center justify-content-start">
+                    <div class="logo">GlobalTalk</div>
+                    <div class="stick">|</div>
+                    <!-- Navigation -->
+                    <nav class="nav">
+                        <a href="/index.html" class="nav-link">Home</a>
+                        <a href="/TextBook/TextBook.html" class="nav-link">TextBook</a>
+                        <a href="#" class="nav-link">Grammar</a>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                              <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Skills
+                              </button>
+                              <ul class="dropdown-menu dropdown-menu">
+                                <li><a class="dropdown-item" href="/SKILLS/Listening/listen.html">Listening</a></li>
+                                <li><a class="dropdown-item" href="#">Writing</a></li>
+                              </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-6 d-flex align-items-center justify-content-end">
+                    <div class="log&out">
+                        <a class="link" href="/Sign up/Sign.html">Register</a>
+                        <span class="stick">|</div>
+                        <a class="link" href="/LogIn/Log.html">Log in <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="line"></div>
+
+
+    <!-- <div class="container mt-4">
+        <div class="row mode">
+            <div class="col-6 d-flex justify-content-start align-items-center">
+                <ul class="nav mode__inner" id="myTab" role="tablist">
+                    <li class="nav-item " role="presentation">
+                      <button class="nav-link active" id="TextBook-tab" data-bs-toggle="tab" data-bs-target="#TextBook" type="button" role="tab" aria-controls="TextBook" aria-selected="true"><span class="choosing"><i class="fa-solid fa-graduation-cap"></i> Textbook</span></button>
+                    </li>
+                    <span style="font-size: 26px; margin: 0 0 0 20px;">|</span>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><span class="choosing"><i class="fa-solid fa-book"></i> Dictionary</span></button>
+                    </li>
+                  </ul>
+            </div>
+
+            <div class="col-6 d-flex justify-content-end">
+                <div class="sprint">
+                    <a class="sprint__inner" href="#">Sprint</a>
+                </div>
+
+                <div class="audio-call ms-3">
+                    <a class="audio__inner" href="#">Audio-Call</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <div class="Slides container mt-3">
+        <div class="tab-content">
+            <div class="tab-pane active" id="TextBook" role="tabpanel" aria-labelledby="TextBook-tab">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-12 mt-2 d-flex justify-content-center">
+                            <ul style="border-bottom: 0;" class="nav nav-tabs level_tab" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="level_block d-inline-flex"><h3 class="level">A1</h3><button type="button" class="foralllevels Easy btn btn-outline-success active" id="A1-tab" data-bs-toggle="tab" data-bs-target="#A1" type="button" role="tab" aria-controls="A1" aria-selected="true">Easy</button></a>
+                                <li class="nav-item" role="presentation">
+                                    <a class="level_block d-inline-flex"><h3 class="level">A2</h3><button type="button" class="foralllevels Easy btn btn-outline-success" id="A2-tab" data-bs-toggle="tab" data-bs-target="#A2" type="button" role="tab" aria-controls="A2" aria-selected="false">Easy</button></a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="level_block d-inline-flex"><h3 class="level">B1</h3><button type="button" class="foralllevels Medium btn btn-outline-warning" id="B1-tab" data-bs-toggle="tab" data-bs-target="#B1" type="button" role="tab" aria-controls="B1" aria-selected="false">Medium</button></a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="level_block d-inline-flex"><h3 class="level">B2</h3><button type="button" class="foralllevels Medium btn btn-outline-warning" id="B2-tab" data-bs-toggle="tab" data-bs-target="#B2" type="button" role="tab" aria-controls="B2" aria-selected="false">Medium</button></a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="level_block d-inline-flex"><h3 class="level">C1</h3><button type="button" class="foralllevels Hard btn btn-outline-danger" id="C1-tab" data-bs-toggle="tab" data-bs-target="#C1" type="button" role="tab" aria-controls="C1" aria-selected="false">Danger</button></a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="level_block d-inline-flex"><h3 class="level">C2</h3><button type="button" class="foralllevels Hard btn btn-outline-danger" id="C2-tab" data-bs-toggle="tab" data-bs-target="#C2" type="button" role="tab" aria-controls="C2" aria-selected="false">Danger</button></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="A1" role="tabpanel" aria-labelledby="A1-tab"> 
+                        <div class="container mt-5 writing-tip rounded p-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="title-writing">A message to say you're late</h1>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <img class="img-fluid" style="border-radius: 16px;" src="https://parade.com/.image/t_share/MTkzNDMwNzY3MzQxMTUxODEx/why-are-my-text-messages-green.jpg" alt="">
+                                    <p class="mt-3" style="font-size: 20px;">Learn how to write text messages to tell a friend you're going to be late.</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="accordion m-0 w-100" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                              Instruction
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                        .
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                              Reading text
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse  show">
+                                            <div class="accordion-body text-center">
+                                              <img class="img-fluid" src="../Writing/image_2023-06-24_08-23-26.png" alt="">  
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <h2 class="title-writing">Tips</h2>
+                                    <ol>
+                                        <li>You don't need to write complete sentences for text messages.</li>
+                                        <li>Use abbreviations like LMK (= let me know) or use emojis to save time writing.</li>
+                                        <li>You don't need to use full stops (.) at the end of messages.</li>
+                                        <li>Say how many minutes you think you'll need, e.g. I'm running 10 minutes late.</li>
+                                        <li>It’s good to say sorry and sorry again, but you don't need to say sorry in every message.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="A2" role="tabpanel" aria-labelledby="A2-tab"> 
+                        <div class="container mt-5 writing-tip rounded p-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="title-writing">A thank-you message</h1>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <img class="img-fluid" style="border-radius: 16px;" src="https://www.cv-library.co.uk/career-advice/wp-content/uploads/2022/05/Blog-Personal-Profile.jpg" alt="">
+                                    <p class="mt-3" style="font-size: 20px;">Learn how to write a personal profile for a social app or website.</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="accordion m-0 w-100" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                              Instruction
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Read the text and tips.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                              Reading text
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse  show">
+                                            <div class="accordion-body">
+                                                <h1 style="font-family: sans-serif; color:rgb(66, 23, 104); font-weight: bold;">My profile</h1>
+                                                <p>Hi! I am Alexander, and I sincerely believe in the power of creativity and self-improvement. In general, I am a person who strives for harmony and self-development. Creativity, music, photography - I use all this to reveal my personality and share my view of the world.</p>
+                                                <h2 style="font-family: sans-serif; color:rgb(66, 23, 104); font-weight: bold;">Morals</h2>
+                                                <p>The main thing in my morals is openness and respect for other people. I try to be an attentive companion and a supportive friend. My friendship is valuable to me, and I am always ready to help my loved ones in difficult moments</p>
+                                                <h2 style="font-family: sans-serif; color:rgb(66, 23, 104); font-weight: bold;">Hobbies</h2>
+                                                <p>My passion is music. I started playing guitar as a teenager, and since then it has become my faithful companion. I study different playing styles and compositions, and also write my own music. Every note, every chord is a way to express my emotions and thoughts, and I can't describe in words what joy the creation of melodies brings me.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <h2 class="title-writing">Tips</h2>
+                                    <ol>
+                                        <li>Write about your good points, not your bad points.</li>
+                                        <li>Don’t include every single thing. Choose a few points and focus on them.</li>
+                                        <li>Don’t add your contact details (e.g. address, phone number). You could get unwanted messages.</li>
+                                        <li>Check your spelling and punctuation before you post.</li>
+                                        <li>You can use punctuation and emojis when you’re joking, e.g.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="B1" role="tabpanel" aria-labelledby="B1-tab">  
+                        <div class="container mt-5 writing-tip rounded p-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="title-writing">A personal profile</h1>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <img class="img-fluid" style="border-radius: 16px;" src="https://contenthub-static.grammarly.com/blog/wp-content/uploads/2019/02/bmd-4584.png" alt="">
+                                    <p class="mt-3" style="font-size: 20px;">Learn how to write a thank-you message to a colleague.</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="accordion m-0 w-100" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                              Instruction
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Read the text and tips.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                              Reading text
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse  show">
+                                            <div class="accordion-body">
+                                                <span style="font-family: sans-serif; font-weight: bold;">From:</span> <span>Paco</span> <br>
+                                                <span style="font-family: sans-serif; font-weight: bold;">To:</span> <span>Maria</span> <br>
+                                                <span style="font-family: sans-serif; font-weight: bold;">Subject:</span> <span>Thanks</span> <br>
+                                                <pre style="font-family: sans-serif;">
+
+Hi Maria,
+
+I hope you're well.
+                                                    
+I'm just writing to say thanks for your help on the project last month. We really appreciate you stepping in to <br>support us. I know you had to put in extra hours to catch up on your own work, so thank you very much.  
+                                                    
+Your expertise was vital for this project and we couldn't have finished it successfully without you. You really helped us and we hope to work with you again on future projects.
+                                                    
+I'll be in touch again soon about possible future collaborations. I look forward to working with you more closely this year.
+                                                    
+All the best,
+                                                    
+Paco
+                                                </pre>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <h2 class="title-writing">Tips</h2>
+                                    <ol>
+                                        <li>Start with a friendly comment: <br>
+                                            <i>I hope you're well.</i>
+                                        </li>
+                                        <li>It's usually best to use an informal style with colleagues: <br>
+                                            <i>Hi Maria, … <br>
+                                                Thanks for your help.</i>
+                                        </li>
+                                        <li>Keep it short.</li>
+                                        <li>Mention the good work they did and the positive effect of it: <br>
+                                            <i>Your expertise was vital for this project. <br>
+                                                We couldn't have finished it successfully without your help.</i>
+                                        </li>
+                                        <li>End with a positive comment about future collaboration: <br>
+                                            <i>I hope to work with you more closely in future. <br>
+                                                I look forward to working with you again.</i>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane" id="B2" role="tabpanel" aria-labelledby="B2-tab">  
+                        <div class="container mt-5 writing-tip rounded p-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="title-writing">A CV</h1>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <img class="img-fluid" style="border-radius: 16px;" src="https://www.businessinsider.in/photo/69267449/difference-between-cv-and-resume.jpg?imgsize=435538" alt="">
+                                    <p class="mt-3" style="font-size: 20px;">Learn how to write a curriculum vitae, often called a CV in the UK or résumé in American English.</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="accordion m-0 w-100" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                              Instruction
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Read the text and tips.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                              Reading text
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse  show">
+                                            <div class="accordion-body">
+                                                    <h1 style="font-family: sans-serif;">Anna Ivanova</h1>
+                                                    <h4>Senior Product Designer</h4>
+
+                                                    <h6 class="mt-5" style="font-size: 12px;">EXPERIENCE</h6>
+                                                    <h6 style="font-weight: 600;">Senior UI/UX Product Designer</h6>
+                                                    <h6 class="mt-3" style="font-size: 12px;">Aug 2018 - Present - 1 year, Paris</h6>
+                                                    <p style="font-weight: 600;">Directly collaborated with CEO and Product team to prototype, design and deliver the UI and UX experience with a lean design process: research, design, test, and iterate.</p>
+
+                                                    <h6 class="mt-5" style="font-weight: 600;">UI/UX Product Designer</h6>
+                                                    <h6 class="mt-3" style="font-size: 12px;">Aug 2013 - Aug 2018 - 5 years, Paris</h6>
+                                                    <p style="font-weight: 600;">Lead the UI design with the accountability of the design system, collaborated with product and development teams on core projects to improve product interfaces and experiences.
+                                                    </p>
+                                            
+                                                    <h6 class="mt-5" style="font-weight: 600;">UI Designer</h6>
+                                                    <h6 class="mt-3" style="font-size: 12px;">Aug 2012 - jul 2013 - 1 year, Paris</h6>
+                                                    <p style="font-weight: 600;">Designed mobile UI applications for Orange R&D departement, BNP Paribas, La Poste, Le Cned...
+                                                    </p>
+
+                                                    <h6 class="mt-5" style="font-weight: 600;">Graphic Designer</h6>
+                                                    <h6 class="mt-1" style="font-size: 12px;">Sept 2010 - jul 2012 - 2 years, Paris</h6>
+                                                    <p style="font-weight: 600;">Designed print and web applications for Pau Brasil, Renault,
+                                                        Le théatre du Mantois, La mairie de Mantes la Ville...         
+                                                    </p>
+
+
+                                                    <h6 class="mt-5" style="font-size: 12px;">EDUCATION</h6>
+                                                    <h6 style="font-weight: 600;">Bachelor European in Graphic Design</h6>
+                                                    <h6 class="mt-1" style="font-size: 12px;">2009 - 2010, Bagnolet</h6>
+
+                                                    <h6 style="font-weight: 600;">BTS Communication Visuelle option Multimédia</h6>
+                                                    <h6 class="mt-1" style="font-size: 12px;">2007 - 2009, Bagnolet</h6>
+
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <h2 class="title-writing">Tips</h2>
+                                    <ol>
+                                        <li>Start with a short profile to show who you are and what you offer.</li>
+                                        <li>List your employment history, starting with the present.</li>
+                                        <li>Explain any gaps, for example time spent travelling or having children.</li>
+                                        <li>Use bullet points for your main responsibilities and experience in each role. Choose the aspects of your previous jobs that are most relevant to the new job you are applying for.</li>
+                                        <li>Then give your educational background. List the relevant qualifications that you have, starting with the most recent. Include the title of your qualification, where you studied and the date you successfully completed it.</li>
+                                        <li>Consider putting Education above Employment if you don't have a lot of work experience yet. </li>
+                                        <li>List other experience or interests you may have if they are relevant to the job.</li>
+                                        <li>If you have someone who could support your application, add their contact details or say References available on request at the end.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane" id="C1" role="tabpanel" aria-labelledby="C1-tab">  
+                        <div class="container mt-5 writing-tip rounded p-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="title-writing">An opinion essay</h1>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <img class="img-fluid" style="border-radius: 16px;" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/09/08/12/istock-941513610.jpg" alt="">
+                                    <p class="mt-3" style="font-size: 20px;">Learn how to write an opinion essay.</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="accordion m-0 w-100" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                              Instruction
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Read the text and tips.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                              Reading text
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse  show">
+                                            <div class="accordion-body">
+                                                <figure class="text-center">
+                                                    <blockquote class="blockquote">
+                                                      <p style="border-left: 5px solid grey;"><i>Some people think that some types of criminals should not go to prison. Instead they should do unpaid work in the community. To what extent do you agree?</i></p>
+                                                    </blockquote>
+                                                </figure>
+
+                                                <p style="font-family: sans-serif;">Owing to the great variety of crimes that can be punishable by prison, some people argue that not all criminals are the same and it would therefore be more appropriate to give certain criminals community service instead. I agree that in some cases, prison may not be the best solution and community service would probably have more benefits.
+                                                    <br><br>
+                                                    One justification given for prisons is to keep society safe by removing criminals from the outside world. So the first thing to consider is if someone who has broken the law is a danger to other people. In the case of violent crime, there is an argument to keep the perpetrator away from society. However, burglary or possession of drugs, for example, does not involve violence against other people so the criminal does not present a direct danger to anyone in the community. Keeping these types of criminals in prison is expensive for the taxpayer and does not appear to be an effective punishment as they often commit the same crime again when they come out of prison.
+                                                    <br><br>
+                                                    Personally, I also believe punishments should reform people so they do not reoffend. A further reason not to put these people in prison is that they may mix with more dangerous and violent criminals, potentially committing a worse crime when they are released. By keeping them in the community, helping others, they not only learn new skills, but they could also develop more empathy and care towards others. If this occurs, society can only benefit.
+                                                    <br><br>
+                                                    Critics of this more rehabilitative approach to crime believe that justice should be harsh in order to deter people from committing similar crimes and that community service could be less likely to have that effect. However, there is very little evidence to suggest that long prison sentences deter criminals.
+                                                    <br><br>
+                                                    In conclusion, putting criminals who are not a danger to society in prison is expensive and, in my opinion, ineffective, both as a deterrent and as a form of rehabilitation. Community service for non-violent crimes benefits both society and the offender. That said, it would be useful to have more data to work out whether community service or prison is more likely to stop someone reoffending. I strongly believe that decisions on how best to deal with criminals should be based on evidence of what actually works.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <h2 class="title-writing">Tips</h2>
+                                    <ol>
+                                        <li>Introduce your essay by restating the question in your own words.</li>
+                                        <li>If the essay asks you <em>to what extent do you agree?</em>, make your opinion clear throughout. You can either agree, partially agree or disagree with the statement, explaining and justifying your opinion.</li>
+                                        <li>The structure should be:
+                                            <ul>
+                                                <li>Introduction</li>
+                                                <li>The first reason why you agree/disagree</li>
+                                                <li>The second reason why you agree/disagree</li>
+                                                <li>The third reason why you agree/disagree (if you have one)</li>
+                                                <li>Conclusion</li>
+                                            </ul>
+                                        </li>
+                                        <li>Use phrases to organise and link your ideas, e.g. <em>Owing to … , One justification for … , The first thing to consider is … , A further reason … , In conclusion ... .</em></li>
+                                        <li>If you do not have solid evidence for your ideas, use modal verbs such as <em>might</em>, <em>may</em> or <em>could</em> (e.g. <em>they <u>could</u> develop more empathy and care</em>) or other tentative phrases (e.g. <em> it <u> does not appear to be</u> an effective punishment</em>).</li>
+                                        <li>Conclude by restating your opinion and summarising your two or three main arguments.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="C2" role="tabpanel" aria-labelledby="C2-tab">
+                        <div class="container mt-5 writing-tip rounded p-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1 class="title-writing">A response to a complaint</h1>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <img class="img-fluid" style="border-radius: 16px;" src="https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/newscms/2017_21/2011711/170524-better-argument-1234p.jpg" alt="">
+                                    <p class="mt-3" style="font-size: 20px;">Learn how to write a response to a complaint.</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="accordion m-0 w-100" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                              Instruction
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Read the text and tips.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                              Reading text
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse  show">
+                                            <div class="accordion-body">
+                                                <div class="accordion-body">
+                                                    <span style="font-family: sans-serif; font-weight: bold;">From:</span> <span>pierre_houches@me.com</span> <br>
+                                                    <span style="font-family: sans-serif; font-weight: bold;">To:</span> <span>Customer Service Team – TC Insurance</span> <br>
+                                                    <span style="font-family: sans-serif; font-weight: bold;">Subject:</span> <span>Your recent policy renewal</span> <br>
+                                                    <pre style="font-family: sans-serif;">
+    
+Dear Mr Houches,
+
+Thank you for your recent renewal of your insurance policy with Top Car Insurance.
+                                                        
+It has been brought to our attention that at the end of your renewal call you registered a complaint and stated <br> that you were dissatisfied with the service you had received.
+                                                        
+We value your custom and I assure you that we take all customer feedback seriously. On behalf of the company I would like to apologise for the length of time <br> it took for you to receive your final quote for this renewal. I am also sorry for the inconvenience caused when the discounts you received were not automatically applied.
+                                                        
+We have taken your suggestions on board and will review our renewals process for existing customers. <br> We understand your point that the process should not take as long for existing customers as for new customers buying a new policy.
+                                                        
+In appreciation of the many years you have been a customer of Top Car Insurance we are happy to refund you the difference <br> in price between your new and your previous premium, i.e. £73.20. I have also made a note on your account to ensure <br> that your next renewals process will run more smoothly for you.
+                                                        
+We value your feedback and will use it to improve our service.
+                                                        
+We trust that you will find this a satisfactory response to your complaint and that this correspondence will bring this matter to a close. <br>However, should you wish to discuss this matter further, please let us know how best to contact you.
+                                                        
+With kind regards,
+                                                        
+Rowena Harrod
+                                                        
+Customer Service Team
+                                                    </pre>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <h2 class="title-writing">Tips</h2>
+                                    <ol>
+                                        <li>Use a formal register.</li>
+                                        <li>Choose vocabulary that is more objective and reduces negative emotions where possible, e.g. dissatisfied rather than <em>unhappy/upset</em>, <em>inconvenience</em> rather than <em>trouble/problem</em>.</li>
+                                        <li>Acknowledge the complaint and show you understand the problem. Focus on the facts and avoid making excuses or placing blame on individual people.</li>
+                                        <li>Apologise and explain what steps will be taken to ensure it doesn't happen again.</li>
+                                        <li>Emphasise the positive relationship with the customer: <br>
+                                                <i>We value your custom … / feedback … <br>
+                                                    In appreciation of the many years you have been a customer … <br>
+                                                    We are happy to ... <br>
+                                                    We trust that you will ...</i>
+
+                                        </li>
+                                        <li>Offer some kind of solution or compensation if appropriate.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+    </div>
+
+
+    <footer class="footer">
+        <div class="container text-center w-50">
+            <div class="row">
+                <div class="col-12 mt-5 mb-2">
+                    <h1 class="logo-footer">GlobalTalk</h1>
+                </div>
+                <div class="col-12">
+                    <p class="text-footer">Welcome to our English language learning website! Here you will find everything you need for an effective and fascinating immersion in English, whether you are a beginner or an advanced student.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row text-center">
+                <div class="col-4">
+                    <i class="fa-brands fa-instagram fa-2xl"></i> <a class="link" style="margin:0; margin-left: 5px;" href="https://www.instagram.com/a.tskhay15/" target="_blank">a.tskhay15</a> <a class="link" style="margin:0; margin-left: 5px;" href="https://www.instagram.com/erke_mahazhan2104/" target="_blank">erke_mahazhan2105</a>
+                </div>
+
+                <div class="col-4">
+                    <i style="margin-left: 30px" class="fa-sharp fa-solid fa-location-dot fa-2xl"></i> <a class="link ms-1" href="https://www.google.com/maps/place/Astana+IT+University/@51.0908492,71.4183229,15z/data=!4m2!3m1!1s0x0:0x4dff4a1973f7567e?sa=X&ved=2ahUKEwjlrYvK3dr_AhWBlIsKHYRJBV4Q_BJ6BAgyEAg" target="_blank">улица Туркистан, Астана 020000</a>
+                </div>
+
+                <div class="col-4">              
+                    <i style="margin-left: 30px" class="fa-solid fa-phone-volume fa-2xl"></i> <a class="link ms-1" href="tel:none">+8 800 555 35 35</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container Copyright">
+        <div class="row text-center">
+            <div class="col-12">
+                <i class="fa-sharp fa-regular fa-copyright"></i> 2023. YerkeDrey's GlobalTalk
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/8f1ac5c6fb.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
